@@ -2,7 +2,7 @@ package seminars.seminar1.task2;
 
 import java.util.Scanner;
 
-public class Program {
+public class ProgramHomework {
     /*
     Задача 2: Техническое задание на разработку информационной системы UMarket
     Вам доверено спроектировать и реализовать классы предметной области,
@@ -81,7 +81,7 @@ public class Program {
     }
 
     static <T extends Food> void CreateCart(Class<T> clazz, UMarket market) {
-        Cart<T> cart = new Cart<>(clazz, market);
+        CartV2<T> cart = new CartV2<>(clazz, market);
         while (true) {
             System.out.println("Список доступных товаров:");
             System.out.println("[0] Завершение формирования корзины и балансировка");
@@ -91,7 +91,7 @@ public class Program {
                 int no = scanner.nextInt();
                 scanner.nextLine();
                 if (no == 0) {
-                    cart.cardBalancing();
+                    cart.cardBalancingV2();
                     System.out.println("Ваша корзина содержит продукты: ");
                     cart.printFoodstuffs();
                     return;
