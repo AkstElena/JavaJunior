@@ -9,8 +9,12 @@
                 name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 <!--        <property-->
 <!--                name="hibernate.connection.url">jdbc:mysql://localhost:3306</property>-->
-        <property
-                name="hibernate.connection.url">jdbc:mysql://localhost:3306/studentsdb</property>
+<!--        <property-->
+<!--                name="hibernate.connection.url">jdbc:mysql://localhost:3306/studentsdb</property>-->
+                <property
+                        name="hibernate.connection.url">jdbc:mysql://localhost:3306/java_junior_persons_db</property>
+
+
         <property name="hibernate.connection.username">Admin</property>
         <property name="hibernate.connection.password">5EX-Aee89-Gra84</property>
 
@@ -22,6 +26,7 @@
                 name="hibernate.current_session_context_class">thread</property>
 
 <!--        <mapping class="lectures.lecture4.Magic" />-->
-        <mapping class="models.Student" />
+<!--        <mapping class="models.Student" />-->
+        <mapping class="homeworks.homework4.Person" />
     </session-factory>
 </hibernate-configuration>

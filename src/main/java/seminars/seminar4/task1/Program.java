@@ -22,8 +22,8 @@ public class Program {
      */
     public static void main(String[] args) {
 
-//        String URL = "jdbc:mysql://localhost:3306";
-        String URL = "jdbc:mysql://students.db:3306"; // Для соединения двух контейнеров
+        String URL = "jdbc:mysql://localhost:3306";
+//        String URL = "jdbc:mysql://students.db:3306"; // Для соединения двух контейнеров
         String USER = "Admin";
         String PASSWORD = "5EX-Aee89-Gra84";
 
